@@ -6,7 +6,7 @@
 /*   By: sluthang <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/24 11:35:16 by sluthang          #+#    #+#             */
-/*   Updated: 2020/06/24 14:13:43 by sluthang         ###   ########.fr       */
+/*   Updated: 2020/06/24 17:27:16 by sluthang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int ft_str_is_lowercase(char *str);
 
 int main()
 {
-  char str[20] = "thIsisabootcamp";
+  char str[20] = "Thisisabootcamp";
   int c;
   c = ft_str_is_lowercase(str);
   printf("%d\n",c);
@@ -34,7 +34,7 @@ int ft_str_is_lowercase(char *str)
    while (str[i] !='\0')
    {
        c = str[i++];
-	   if(str[i] == 'A' || str[i] == 'Z' )
+	   if(c < 'A' || c <'Z' )
 	   {
 	      return 0;
 	   
